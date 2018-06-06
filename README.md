@@ -95,7 +95,7 @@ How to build -
 		cd /Users/bonagara/Downloads/alexa-app/Alexa-DNAC-Intent/code
 		zip --recurse-paths ../index.zip *
 		cd ..
-                aws lambda update-function-code --function-name dnac --zip-file fileb://index.zip
+		aws lambda update-function-code --function-name dnac --zip-file fileb://index.zip
 
 
 Any additional help you need? 
