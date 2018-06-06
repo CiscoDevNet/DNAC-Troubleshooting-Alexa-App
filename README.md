@@ -44,19 +44,20 @@ Assumption -
 		$ ./ngrok http 3000
 How to build -
 --------------- 
-1. git clone app project from https://github.com/CiscoDevNet/DNAC-Troubleshooting-Alexa-App.git
-   example - 	
-   1.1 git clone https://github.com/CiscoDevNet/DNAC-Troubleshooting-Alexa-App.git
-   1.2.go to /Users/bonagara/Downloads/alexa-app/DNAC-APP-DEV/DNAC-AppDev/DNAC Troubleshooting App  
-2. go to folder alexa-app/dnac-templates after cloning of repo and start server after changing the dnac config files according to your network 
-   example - /Users/bonagara/Downloads/alexa-app/DNAC-APP-DEV/DNAC-AppDev/DNAC Troubleshooting App/alexa-app/dnac-templates/
+	1. git clone app project from https://github.com/CiscoDevNet/DNAC-Troubleshooting-Alexa-App.git
+  	   example - 	
+  		1.1 git clone https://github.com/CiscoDevNet/DNAC-Troubleshooting-Alexa-App.git
+   		1.2.go to /Users/bonagara/Downloads/alexa-app/DNAC-APP-DEV/DNAC-AppDev/DNAC Troubleshooting App  
+	2. go to folder alexa-app/dnac-templates after cloning of repo and start server after changing the dnac config files \
+   	   according to your network 
+   	   example - /Users/bonagara/Downloads/alexa-app/DNAC-APP-DEV/DNAC-AppDev/DNAC Troubleshooting App/alexa-app/dnac-templates/
 	     BONAGARA-M-F0XJ:alexa-app bonagara$ cd dnac-templates/
              BONAGARA-M-F0XJ:dnac-templates bonagara$ ls
              	deploytemplate.py	
              	dnac.py		
              	dnac_config.py
 		Notes:
-		1. dnac_config.py -- contains the dnac cluster information, please change according to your dnac ip info, 
+		*dnac_config.py -- contains the dnac cluster information, please change according to your dnac ip info, 
 		username and password  
 		Example -
 	    	BONAGARA-M-F0XJ:dnac-templates bonagara$ cat dnac_config.py 
@@ -64,8 +65,8 @@ How to build -
 	    	DNAC_PORT=os.environ.get('DNAC_PORT',8080)
             	DNAC_USER=os.environ.get('DNAC_USER','admin')
             	DNAC_PASSWORD=os.environ.get('DNAC_PASSWORD','Maglev123')
-	        2. dnac.py -- contains the dnac helper functions 
-		3. deplytemplate.py -- contains the deploy POST API of template programmer which does actual provisioning to WLC's  
+	        *dnac.py -- contains the dnac helper functions 
+		*deplytemplate.py -- contains the deploy POST API of template programmer which does actual provisioning to WLC's  
 		via dnac cluster and you can start the python flask server by invoking ./deploytemplate.py , also you can change 
 		the WLC IP address and AP name inside deploytemplate.py payload variable
 		Example - 
