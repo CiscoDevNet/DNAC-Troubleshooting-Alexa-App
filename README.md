@@ -89,10 +89,14 @@ How to build -
 	        DNAC_PROXY_PORT = "80"	
   	 4. zip the entire code folder and run the aws CLI as mentioned below
 	        Example -    
-	        zip --recurse-paths ../index.zip *
+	        execute below commands
+		cd /Users/bonagara/Downloads/alexa-app/Alexa-DNAC-Intent/code
+		zip --recurse-paths ../index.zip *
+		cd ..
                 aws lambda update-function-code --function-name dnac --zip-file fileb://index.zip
-	 5. Attaching video link as well for quick demo of it --  
-              https://www.youtube.com/watch?v=b2_WrI7Ov30&index=2&list=PL5kAIXUXmL1DkErkeJWrMHtQltjuc-YsX&t=0s
+	 5. Attaching video recording of working App --  
+              Recording link 
+	      https://www.youtube.com/watch?v=b2_WrI7Ov30&index=2&list=PL5kAIXUXmL1DkErkeJWrMHtQltjuc-YsX&t=0s
 
 
 Any additional help you need? 
