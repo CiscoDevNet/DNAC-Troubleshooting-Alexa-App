@@ -59,7 +59,7 @@ Assumption -
 
 
 	2.Ngrok need to be installed from https://ngrok.com/download
-		example - added in github repo , download the same and run below command line 
+		run below commands from terminal
 		$ ./ngrok http 3000
 
 It will display like below in the console 
