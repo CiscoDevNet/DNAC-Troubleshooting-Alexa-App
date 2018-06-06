@@ -13,7 +13,9 @@ Problem:
 Solution:
 ---------
      This App will allow the users to configure the blinking LED Flash on APs for certain amount of time 
-     and its configurable 1 min , 5 min definite secs or indefinite default as 60 secs       
+     and its configurable 1 min , 5 min definite secs or indefinite default as 60 secs 
+     Look at video recording of working Alexa App --  
+     https://www.youtube.com/watch?v=b2_WrI7Ov30&index=2&list=PL5kAIXUXmL1DkErkeJWrMHtQltjuc-YsX&t=0s
 APP DOMAIN/APIs USED:
 --------------------- 
      TemplateProgrammer API - deploy and deploystatus API
@@ -94,9 +96,6 @@ How to build -
 		zip --recurse-paths ../index.zip *
 		cd ..
                 aws lambda update-function-code --function-name dnac --zip-file fileb://index.zip
-	 5. Attaching video recording of working App --  
-              Recording link 
-	      https://www.youtube.com/watch?v=b2_WrI7Ov30&index=2&list=PL5kAIXUXmL1DkErkeJWrMHtQltjuc-YsX&t=0s
 
 
 Any additional help you need? 
