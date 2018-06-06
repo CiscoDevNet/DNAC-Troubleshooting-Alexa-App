@@ -79,7 +79,7 @@ How to build -
 		{'deploymentId': '2c72b5b6-8978-41db-87f3-326dd52179eb', 'startTime': '', 'endTime': '', 'duration': '0 seconds'}
 		Waiting for deploymentId 2c72b5b6-8978-41db-87f3-326dd52179eb
 		127.0.0.1 - - [01/Jun/2018 14:34:13] "POST /api/v1/setPowerLevelLow HTTP/1.1" 200 -
-		4. Go to directory -- Alexa-DNAC-Intent/code in the git cloned repo folder and modify the ngrok server information 
+	3. Go to directory -- Alexa-DNAC-Intent/code in the git cloned repo folder and modify the ngrok server information 
 		as mentioned below  
 	   	Example - 
 	        cd /Users/bonagara/Downloads/alexa-app/DNAC-APP-DEV/DNAC-AppDev/DNAC Troubleshooting App/alexa-app/Alexa-DNAC-Intent/code
@@ -87,11 +87,11 @@ How to build -
 	        please change below server proxy and port information according to your ngrok daemon
 	        DNAC_PROXY = "f76fd944.ngrok.io"
 	        DNAC_PROXY_PORT = "80"	
-  	        5. zip the entire code folder and run the aws CLI as mentioned below
+  	 4. zip the entire code folder and run the aws CLI as mentioned below
 	        Example -    
 	        zip --recurse-paths ../index.zip *
                 aws lambda update-function-code --function-name dnac --zip-file fileb://index.zip
-	        6. Attaching video link as well for quick demo of it --  
+	 5. Attaching video link as well for quick demo of it --  
               https://www.youtube.com/watch?v=b2_WrI7Ov30&index=2&list=PL5kAIXUXmL1DkErkeJWrMHtQltjuc-YsX&t=0s
 
 
