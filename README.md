@@ -84,9 +84,9 @@ POST /api/v1/setPowerLevelLow  200 OK
 How to build
 ------------- 
 
-1. git clone app project from https://wwwin-github.cisco.com/gcharleb/DNAC-AppDev.git
+1. git clone app project from https://github.com/CiscoDevNet/DNAC-Troubleshooting-Alexa-App.git
    example - 	
-   1.git clone https://wwwin-github.cisco.com/gcharleb/DNAC-AppDev.git	
+   1.git clone https://github.com/CiscoDevNet/DNAC-Troubleshooting-Alexa-App.git
    2.go to /Users/bonagara/Downloads/alexa-app/DNAC-APP-DEV/DNAC-AppDev/DNAC Troubleshooting App  
 2. go to folder alexa-app/dnac-templates after cloning of repo and start server after changing the dnac config files according to your network 
    example - /Users/bonagara/Downloads/alexa-app/DNAC-APP-DEV/DNAC-AppDev/DNAC Troubleshooting App/alexa-app/dnac-templates/
