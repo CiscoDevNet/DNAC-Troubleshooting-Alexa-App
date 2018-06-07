@@ -22,14 +22,24 @@ APP DOMAIN/APIs USED:
 How will the APP be Packaged? 
 -----------------------------
 	It will be packaged as an alexa app
+Technologies that you will be learn:
+-----------------------------------
+    DNAC API,
+    Alexa Skill Builder
+    Amazon Lambda Function	
 Prerequisites:
 ------------- 
+    Amazon AWS account and intermediate experience for Lambda
+    Amazon developer account for Alexa Skills
+    Python basic experience
+	
 Required Lab Devices - 
 --------------------- 
-	Amazon Alexa Echo dot device 
-    	Cisco DNAC Appliance  
-	Cisco WLC Controller 55xx/35xx/85xx
-	Cisco APs
+    Amazon Alexa Echo dot device 
+    Cisco DNAC Appliance  
+    Cisco WLC Controller 55xx/35xx/85xx
+    Cisco APs	
+		
 Assumption - 
 ------------- 
 	Login to DNAC, Add WLC Devices to Inventory, Create Project for Blinking AP via Template Programmer UI and 
