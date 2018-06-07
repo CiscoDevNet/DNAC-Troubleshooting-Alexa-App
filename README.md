@@ -97,6 +97,40 @@ How to build -
 		cd ..
 		aws lambda update-function-code --function-name dnac --zip-file fileb://index.zip
 
+How to Test:
+
+	1. Power ON Alexa echo spot
+	2. Connect to SSID of your network, so that she gets internet conenction 
+	3. Play with Alexa with few commands like Alexa Good Morning :) and make sure its connected to Internet and respond back with 		   greeting	
+	4. Ask Alexa with DNAC voice commands like "Alexa Genie" and she will respond back with "Welcome DNAC Alexa Intent Library 	   	      1.0"
+	5. Goto Console or telnet of WLC and execute below CLI to verify whether blinking status is on or off 
+	
+	   BONAGARA-M-F0XJ:ashutosh bonagara$ telnet 172.20.228.71
+	   Trying 172.20.228.71...
+	   Connected to 172.20.228.71.
+	   Escape character is '^]'.
+	   (Cisco Controller) 
+	   User: admin
+	   Password:********
+	   (Cisco Controller) >
+	   (Cisco Controller) >
+	   (Cisco Controller) >
+	   (Cisco Controller) >
+	   (Cisco Controller) >show ap led-flash APCC16.7EDB.6C5E
+
+	   Led Flash........................................ Disabled
+	
+	6. Ask Alexa with DNAC Voice commands like "Alexa LED ON" and she will respond back with provisioning status and blinking status   	      AP on the floor
+	   Goto Console or telnet of WLC and execute below CLI to check whether blinking status is on 
+	   (Cisco Controller) >
+	   (Cisco Controller) >
+	   (Cisco Controller) >
+	   (Cisco Controller) >show ap led-flash APCC16.7EDB.6C5E
+
+	   Led Flash........................................ Enabled for 60 secs, 59 secs left
+
+
+
 
 Any additional help you need? 
 
