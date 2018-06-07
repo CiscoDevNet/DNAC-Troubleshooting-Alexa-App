@@ -97,13 +97,14 @@ How to build -
 		cd ..
 		aws lambda update-function-code --function-name dnac --zip-file fileb://index.zip
 
-How to Test:
+How to play with DNAC Alexa App -
+--------------------------------
 
 	1. Power ON Alexa echo spot
-	2. Connect to SSID of your network, so that she gets internet conenction 
+	2. Connect to Wireless SSID of your network, so that it gets internet conenction 
 	3. Play with Alexa with few commands like Alexa Good Morning :) and make sure its connected to Internet and respond back with 		   greeting	
-	4. Ask Alexa with DNAC voice commands like "Alexa Genie" and she will respond back with "Welcome DNAC Alexa Intent Library 	   	      1.0"
-	5. Goto Console or telnet of WLC and execute below CLI to verify whether blinking status is on or off 
+	4. Ask Alexa with DNAC voice commands like "Alexa Genie" and she will respond back with "Welcome to DNAC Alexa Intent Library 	   	      1.0"
+	5. Goto Console or telnet of WLC and execute below CLI to verify whether blinking status is on or off for particular AP
 	
 	   BONAGARA-M-F0XJ:ashutosh bonagara$ telnet 172.20.228.71
 	   Trying 172.20.228.71...
