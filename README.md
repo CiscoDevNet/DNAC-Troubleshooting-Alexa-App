@@ -37,11 +37,11 @@ Assumption -
 	Template CLI Contents :
 		config ap led-state enable $apname
 		config ap led-state flash $duration $apname  
-	1.AWS CLI need to be installed from https://aws.amazon.com/cli/
+	*AWS CLI need to be installed from https://aws.amazon.com/cli/
 		example - pip install awscli
 		This is needed to upload app to aws account 
 		example - aws lambda update-function-code --function-name dnac --zip-file fileb://index.zip
-	2.Ngrok need to be installed from https://ngrok.com/download
+	*Ngrok need to be installed from https://ngrok.com/download
 		run below commands from terminal
 		$ ./ngrok http 3000
 How to build -
@@ -87,19 +87,26 @@ How to build -
 		
 	3. Go to directory -- Alexa-DNAC-Intent/code in the git cloned repo folder and modify the ngrok server information 
 		as mentioned below  
-	   	Example - 
-	        cd /Users/bonagara/Downloads/alexa-app/DNAC-APP-DEV/DNAC-AppDev/DNAC Troubleshooting App/alexa-app/Alexa-DNAC-Intent/code
-	        vi lambda_function.py
-	        please change below server proxy and port information according to your ngrok daemon
-	        DNAC_PROXY = "f76fd944.ngrok.io"
-	        DNAC_PROXY_PORT = "80"	
+	   ______________________________________________________________________________________________________________________
+	  |	cd /Users/bonagara/Downloads/alexa-app/DNAC-APP-DEV/DNAC-AppDev/DNAC Troubleshooting App/alexa-app/		 |
+	  |	cd ./Alexa-DNAC-Intent/code											 |
+	  |     vi lambda_function.py												 |
+	  |     please change below server proxy and port information according to your ngrok daemon				 |
+	  |     DNAC_PROXY = "f76fd944.ngrok.io"										 |
+	  |     DNAC_PROXY_PORT = "80"												 |
+	  |______________________________________________________________________________________________________________________|
+	
   	 4. zip the entire code folder and run the aws CLI as mentioned below
-	        Example -    
-	        execute below commands
-		cd /Users/bonagara/Downloads/alexa-app/Alexa-DNAC-Intent/code
-		zip --recurse-paths ../index.zip *
-		cd ..
-		aws lambda update-function-code --function-name dnac --zip-file fileb://index.zip
+	         _______________________________________________________________________________________________
+		|												|
+		|   	execute below commands from terminal							|
+		|	cd /Users/bonagara/Downloads/alexa-app/Alexa-DNAC-Intent/code				|
+		|	zip --recurse-paths ../index.zip *							|
+		|	cd ..											|
+		|	aws lambda update-function-code --function-name dnac --zip-file fileb://index.zip	|
+		|												|
+		|_______________________________________________________________________________________________|
+		
 
 How to play with DNAC Alexa App -
 --------------------------------
