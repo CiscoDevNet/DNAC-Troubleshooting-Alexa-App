@@ -58,29 +58,33 @@ How to build -
              	deploytemplate.py	
              	dnac.py		
              	dnac_config.py
-		Notes:
-		*dnac_config.py -- contains the dnac cluster information, please change according to your dnac ip info, 
-		username and password  
-		Example -
-	    	BONAGARA-M-F0XJ:dnac-templates bonagara$ cat dnac_config.py 
-	    	DNAC=os.environ.get('DNAC','192.168.117.29')
-	    	DNAC_PORT=os.environ.get('DNAC_PORT',8080)
-            	DNAC_USER=os.environ.get('DNAC_USER','admin')
-            	DNAC_PASSWORD=os.environ.get('DNAC_PASSWORD','Maglev123')
-	        *dnac.py -- contains the dnac helper functions 
-		*deplytemplate.py -- contains the deploy POST API of template programmer which does actual provisioning to WLC's  
-		via dnac cluster and you can start the python flask server by invoking ./deploytemplate.py , also you can change 
-		the WLC IP address and AP name inside deploytemplate.py payload variable
-		Example - 
-		BONAGARA-M-F0XJ:dnac-templates bonagara$ ./deploytemplate.py 
- 		* Running on http://127.0.0.1:3000/ (Press CTRL+C to quit)
-		TOKEN : {'controller_ip': '192.168.117.29', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YWZkYTZmMThhYTEyYzAwODNiOTVkOTMiLCJhdXRoU291cmNlIjoiaW50ZXJuYWwiLCJ0ZW5hbnROYW1lIjoiVE5UMCIsInJvbGVzIjpbIjVhZmRhNmYxOGFhMTJjMDA4M2I5NWQ5MiJdLCJ0ZW5hbnRJZCI6IjVhZmRhNmYwOGFhMTJjMDA4M2I5NWQ5MCIsImV4cCI6MTUyNzg5MjQ1MywidXNlcm5hbWUiOiJhZG1pbiJ9.J1e9tAsaEM9TdcsMfzmP1oLX10W0IVon2-HbL34yEUQ'}
-		LED ON : Posting to https://192.168.117.29/api/v1/template-programmer/template/deploy
-		BODY: Posting {"targetInfo": [{"id": "172.20.228.71", "params": {"apname": "APCC16.7EDB.6C5E", "duration": "60"}, "type": "MANAGED_DEVICE_IP"}], "templateId": "bfb3ea5f-61a0-4ca4-9d57-5fd8dc03e41a"}
-		202
-		{'deploymentId': '2c72b5b6-8978-41db-87f3-326dd52179eb', 'startTime': '', 'endTime': '', 'duration': '0 seconds'}
-		Waiting for deploymentId 2c72b5b6-8978-41db-87f3-326dd52179eb
-		127.0.0.1 - - [01/Jun/2018 14:34:13] "POST /api/v1/setPowerLevelLow HTTP/1.1" 200 -
+		
+		 _______________________________________________________________________________________	
+		|  Files              | Descriptions 						        |
+		|_____________________|_________________________________________________________________|
+		| dnac_config.py      |	contains the dnac cluster information				|
+		|		      | please change according to your dnac ip info, 			|
+		|		      | username and password  						|
+		|		      |	Example -							|
+		|		      |	BONAGARA-M-F0XJ:dnac-templates bonagara$ cat dnac_config.py 	|
+		|		      | DNAC=os.environ.get('DNAC','192.168.117.29')			|
+		|		      | DNAC_PORT=os.environ.get('DNAC_PORT',8080)			|
+		|		      |	DNAC_USER=os.environ.get('DNAC_USER','admin')			|
+		|		      |	DNAC_PASSWORD=os.environ.get('DNAC_PASSWORD','Maglev123')|	| 						|		      |									|	
+		|_____________________|_________________________________________________________________|
+		|dnac.py	      | contains the dnac helper functions      |			|						|		      |									|
+		|_____________________|_________________________________________________________________|
+		|deplytemplate.py     | contains the deploy POST API of template programmer which does  |
+		|		      | actual provisioning to WLC's  via dnac cluster and you can      |
+		|		      | start the python flask server by invoking ./deploytemplate.py   |
+		|   		      | also you can change the WLC IP address and AP name inside       |       
+		|		      | ndeploytemplate.py payload variable                             |
+		|		      | Example -                                                       |
+		|		      | BONAGARA-M-F0XJ:dnac-templates bonagara$ ./deploytemplate.py    |
+		|		      |	                                                                |
+		|_____________________|_________________________________________________________________|
+		
+		
 	3. Go to directory -- Alexa-DNAC-Intent/code in the git cloned repo folder and modify the ngrok server information 
 		as mentioned below  
 	   	Example - 
