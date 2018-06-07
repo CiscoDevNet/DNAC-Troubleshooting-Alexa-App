@@ -24,22 +24,36 @@ How will the APP be Packaged?
 	It will be packaged as an alexa app
 Technologies that you will be learn:
 -----------------------------------
-    DNAC API,
+    DNAC API
     Alexa Skill Builder
-    Amazon Lambda Function	
+    Amazon Lambda Function
+    
+    Alexa Skills:
+    Each Alexa skill is comprised of an “Invocation Name” which you can think of as your app name, a set of “Intents” and the phrases
+    that   map to each intent, and the software that can detect the intent and return an appropriate result.
+    Here's a good video on Writing Alexa Skills
+
+    Amazon Lambda:
+    Lambda is great way to run a small section of code as a micro-service, without the requirement of provisioning any hardware.
+    By using   the provided source code and an AWS API Gateway, the Alexa intent handler can be built pretty easily and scale on demand.
+    
 Prerequisites:
 ------------- 
     Amazon AWS account and intermediate experience for Lambda
     Amazon developer account for Alexa Skills
     Python basic experience
-	
+
+    
+
 Required Lab Devices - 
 --------------------- 
     Amazon Alexa Echo dot device 
     Cisco DNAC Appliance  
     Cisco WLC Controller 55xx/35xx/85xx
     Cisco APs	
-		
+
+
+
 Assumption - 
 ------------- 
 	Login to DNAC, Add WLC Devices to Inventory, Create Project for Blinking AP via Template Programmer UI and 
